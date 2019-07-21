@@ -1,5 +1,7 @@
-import { createStore } from "redux";
+import { createStore, applyMiddleware } from "redux";
+import calciReducer from './reducers/calciReducer';
+import logger from 'redux-logger';
 
-const store = createStore(rootReducer, {});
+const store = createStore(calciReducer, applyMiddleware(logger));
 
 export default store;

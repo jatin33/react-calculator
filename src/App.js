@@ -1,18 +1,40 @@
 import React from 'react';
-import Key from './components/Key';
-import operators from './utils/operators';
-import operands from './utils/operands';
+import DisplayExpression from './components/screen/DisplayExpression';
+import setExpression from './actions/setExpression';
+import clearExpression from './actions/clearExpression';
+import calculateExpression from './actions/calculateExpression';
+import { connect } from 'react-redux';
+import Keypad from './components/Keypad';
 
-function App() {
-
-  return (
-    <div>
-      {
-        operands.concat(operators).map((ops) => <Key data={ops} />)
-      }
-      
-    </div>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <DisplayExpression {...this.props} />
+        <Keypad {...this.props} />
+      </div>
+    );
+  }
 }
 
-export default App;
+const mapStateToProps = (state) => {
+  return {
+    ...state
+  }
+}
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    setExpression: (ops) => {
+      dispatch(setExpression(ops));
+    },
+    clearExpression: () => {
+      dispatch(clearExpression());
+    },
+    calculateExpression: (expression) => {
+      dispatch(calculateExpression(expression));
+    }
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);

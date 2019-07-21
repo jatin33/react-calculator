@@ -1,8 +1,11 @@
 import React from 'react';
 
-const Key = (props) => {
+const Key = ({ buttonKey, onKeyClick }) => {
+    let handleClick = (e) => { onKeyClick(e.target.textContent) };
     return (
-        <input type="button" value={props.data} />
+        <button onClick={handleClick}>
+            {buttonKey}
+        </button>
     );
 }
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import DisplayExpression from './components/screen/DisplayExpression';
+import DisplayExpression from './components/screen/Screen';
 import setExpression from './actions/setExpression';
 import clearExpression from './actions/clearExpression';
 import calculateExpression from './actions/calculateExpression';

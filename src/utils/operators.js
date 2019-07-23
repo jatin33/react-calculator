@@ -1,5 +1,5 @@
 const operators = [
-    '+', '-', '/', '*', '=','AC'
+    '+', '-', '/', '*', '=', 'AC', '.'
 ];
 
 export default operators;

@@ -15,7 +15,9 @@ const calciReducer = (state = { expression: '', total: 0 }, actions) => {
             }
             break;
         case 'CAL_EXPRESSION':
-            state = parseExpression(state.expression);
+            state = {
+                ...parseExpression(state.expression),
+            };
             break;
         default:
             break;

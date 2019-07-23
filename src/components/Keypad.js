@@ -10,7 +10,7 @@ class Keypad extends React.Component {
                 this.props.clearExpression();
                 break;
             case '=':
-                this.props.calculateExpression(this.props.calciReducer.expression);
+                this.props.calculateExpression(this.props.root.expression);
                 break;
             default:
                 this.props.setExpression(key);
@@ -21,7 +21,11 @@ class Keypad extends React.Component {
         return (
             <div>
                 {
-                    operands.concat(operators).map((ops) => <Key buttonKey={ops} key={ops} onKeyClick={this.handleClick} />)
+                    operands.concat(operators).map((ops) => 
+                    <Key 
+                    buttonKey={ops} 
+                    key={ops} 
+                    onKeyClick={this.handleClick} />)
                 }
             </div>
         )

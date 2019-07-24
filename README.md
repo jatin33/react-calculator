@@ -1,4 +1,5 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- [Explore Math.js library for processing math expressions](https://mathjs.org/docs/expressions/syntax.html)
 
 ## Available Scripts
 

@@ -2,6 +2,7 @@ import React from 'react';
 import Key from './Key';
 import operators from '../utils/operators';
 import operands from '../utils/operands';
+import './Keypad.css'
 
 class Keypad extends React.Component {
     handleClick = key => {
@@ -19,7 +20,7 @@ class Keypad extends React.Component {
     }
     render() {
         return (
-            <div>
+            <div className="keypad">
                 {
                     operands.concat(operators).map((ops) => 
                     <Key 

@@ -9,7 +9,7 @@ import Keypad from './components/Keypad';
 class App extends React.Component {
   render() {
     return (
-      <div>
+      <div className="calculator-box">
         <DisplayExpression {...this.props} />
         <Keypad {...this.props} />
       </div>

@@ -11,5 +11,4 @@ class DisplayExpression extends React.Component {
     }
 }
 
-
 export default DisplayExpression;

@@ -1,0 +1,17 @@
+.button {
+    font-size: 0.80em;
+    padding: 0.5em;
+    margin: 1em;
+    border-radius: 80%;
+    background-color: black;
+    color: white;
+}
+
+.operator-buttons {
+    font-size: 0.80em;
+    padding: 0.5em;
+    margin: 1em;
+    border-radius: 80%;
+    background-color: orange;
+    color: brown;
+}

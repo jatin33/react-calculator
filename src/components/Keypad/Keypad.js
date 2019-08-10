@@ -1,7 +1,7 @@
 import React from 'react';
-import Key from './Key';
-import operators from '../utils/operators';
-import operands from '../utils/operands';
+import Key from '../Key/Key';
+import operators from '../../utils/operators';
+import operands from '../../utils/operands';
 import './Keypad.css'
 
 class Keypad extends React.Component {

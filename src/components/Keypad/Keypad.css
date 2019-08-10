@@ -1,4 +1,6 @@
-.keypad{
+.keypad {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    width:10em;
 }

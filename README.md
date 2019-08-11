@@ -1,5 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 - [Explore Math.js library for processing math expressions](https://mathjs.org/docs/expressions/syntax.html)
+- [Explored React Icons library](https://react-icons.netlify.com/#/icons/md)
 
 Good to implement features
 - Exponentiation function, modulus operation

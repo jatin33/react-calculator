@@ -1,6 +1,6 @@
 .keypad {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width:10em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1em;
+    width: 10em;
 }

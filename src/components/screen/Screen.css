@@ -1,15 +1,16 @@
-.display-block{
+.display-block {
     -moz-appearance: textfield;
     -webkit-appearance: textfield;
     background-color: white;
     background-color: -moz-field;
     border: 1px solid darkgray;
-    box-shadow: 1px 1px 1px 0 lightgray inset;  
+    box-shadow: 1px 1px 1px 0 lightgray inset;
     font: -moz-field;
     font: -webkit-small-control;
+    font-size: 0.8em;
     margin: auto;
-    margin-top:1em;
+    margin-top: 1em;
     padding: 2px 3px;
     width: 30em;
-    height:2em;
+    height: 3em;
 }

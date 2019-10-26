@@ -8,7 +8,8 @@ const Key = ({ buttonKey, onKeyClick }) => {
     return (
         <button
             className={operators.includes(buttonKey) ? "operator-buttons" : "button"}
-            onClick={handleClick}>
+            onClick={handleClick}
+            data-testid='button'>
             {buttonKey}
         </button>
     );

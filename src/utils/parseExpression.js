@@ -3,8 +3,13 @@ import * as math from 'mathjs';
 const parseExpression = (expression) => {
     // this function reads the given expression and returns the resulting value
     const result = {};
-    result.total = math.evaluate(handleExpressionEndsWithOperators(checkIfOnlyOperators(expression))) || '';
-    result.expression = String(result.total);
+    try {
+        result.total = math.evaluate(handleExpressionEndsWithOperators(checkIfOnlyOperators(expression))) || '';
+        result.expression = String(result.total);
+    } catch (err) {
+        result.total = 0;
+        result.expression = '';
+    }
     return result;
 }
 

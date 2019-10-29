@@ -12,6 +12,7 @@
 .title-banner {
   background-color: orange;
   padding: 1em;
+  margin: 0.5em;
 }
 
 .container {
@@ -19,4 +20,17 @@
   font-family: 'Orbitron', sans-serif;
   flex-direction: column;
   align-items: center;
+}
+
+.footer {
+  padding: 1em;
+  align-self: flex-end;
+  background-color: chocolate;
+  color: aqua;
+}
+
+.footer a {
+  margin-left: 1em;
+  text-decoration: none;
+  color: beige;
 }

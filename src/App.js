@@ -6,17 +6,21 @@ import calculateExpression from './actions/calculateExpression';
 import { connect } from 'react-redux';
 import Keypad from './components/Keypad/Keypad';
 import './App.css';
+import ErrorBoundary from './ErrorBoundary';
 
 class App extends React.Component {
   render() {
     return (
-      <div className="container">
-        <div className="title-banner"><h3>React Calculator</h3></div>
-        <div className="calculator-box">
-          <DisplayExpression {...this.props} />
-          <Keypad {...this.props} />
+      <ErrorBoundary>
+        <div className="container">
+          <div className="title-banner"><h3>React Calculator</h3></div>
+          <div className="calculator-box">
+            <DisplayExpression {...this.props} />
+            <Keypad {...this.props} />
+            <div className="footer">By <a href="https://linkedin.com/in/jatinpanjwani">Jatin Panjwani</a></div>
+          </div>
         </div>
-      </div>
+      </ErrorBoundary>
     );
   }
 }

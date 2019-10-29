@@ -15,6 +15,7 @@ class App extends React.Component {
         <div className="calculator-box">
           <DisplayExpression {...this.props} />
           <Keypad {...this.props} />
+          <div className="footer">By <a href="https://linkedin.com/in/jatinpanjwani">Jatin Panjwani</a></div>
         </div>
       </div>
     );

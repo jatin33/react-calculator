@@ -3,7 +3,7 @@ import './Key.css';
 import operators from '../../utils/operators';
 
 const Key = ({ buttonKey, onKeyClick }) => {
-    let handleClick = (e) => { onKeyClick(e.target.textContent) };
+    let handleClick = e => onKeyClick(e.target.textContent);
 
     return (
         <button

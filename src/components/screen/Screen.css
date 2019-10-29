@@ -8,6 +8,8 @@
     font: -moz-field;
     font: -webkit-small-control;
     font-size: 0.8em;
+    font-weight: bolder;
+    text-align: center;
     margin: auto;
     margin-top: 1em;
     padding: 2px 3px;
